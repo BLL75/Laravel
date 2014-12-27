@@ -1,0 +1,30 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	
+	
+	<title>Laravel PHP Framework</title>
+	
+	
+</head>
+<body>
+	<div class="container">
+		<h1>
+ Laravel probandolo
+  
+</h1>
+ 
+ 
+<ul>
+  @foreach($usuarios as $usuario)
+  <!-- Equivalente en Blade a <?php //foreach ($usuarios as $usuario) ?> -->
+    <li>
+      {{ $usuario->nombre.' '.$usuario->apellido }} 
+    </li>
+    <!-- Equivalente en Blade a <?php //echo $usuario->nombre.' '.$usuario->apellido ?> -->
+  @endforeach 
+</ul>		
+	</div>
+</body>
+</html>
